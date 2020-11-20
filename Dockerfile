@@ -9,6 +9,7 @@ RUN \
         python-numpy \
         python-matplotlib \
         python-skimage \
+        python-opencv \
     \
     && apt-get autoremove -y \
     && apt-get clean \
