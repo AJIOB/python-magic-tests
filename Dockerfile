@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:14.04
 
 RUN \
     true \
@@ -10,6 +10,7 @@ RUN \
         python-matplotlib \
         python-skimage \
         python-opencv \
+        python-pip \
     \
     && apt-get autoremove -y \
     && apt-get clean \
