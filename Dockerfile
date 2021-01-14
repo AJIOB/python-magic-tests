@@ -19,6 +19,7 @@ RUN \
 RUN \
     true \
     \
-    && python -m pip install --upgrade pip \
+    && python -m pip install --upgrade --ignore-installed pip \
+    && python -m pip install --upgrade --ignore-installed scikit-image \
     \
     && true
