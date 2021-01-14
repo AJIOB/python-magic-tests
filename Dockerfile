@@ -20,6 +20,5 @@ RUN \
     true \
     \
     && python -m pip install --upgrade pip \
-    && pip install --upgrade six \
     \
     && true
