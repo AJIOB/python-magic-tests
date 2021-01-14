@@ -15,3 +15,12 @@ RUN \
     && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN \
+    true \
+    \
+    && python -m pip install --upgrade pip \
+    && pip install --upgrade six \
+    && python -m pip install --upgrade six \
+    \
+    && true
